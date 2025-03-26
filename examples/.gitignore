@@ -1,0 +1,6 @@
+# Examples
+docs/
+cache/
+out/
+lib/
+.env

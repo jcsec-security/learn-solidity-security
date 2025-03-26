@@ -1,0 +1,6 @@
+# Exercises
+docs/
+cache/
+out/
+lib/
+.env
