@@ -12,17 +12,17 @@ Here you have multiple small examples of basic security issue of solidity smart 
 
 - Logic bug
 - Basic reentrancy - more details [here](https://www.cyfrin.io/glossary/reentrancy-attack)
-- Unencrypted secret data on-chain - more details[here](https://swcregistry.io/docs/SWC-136)
-- Weak pseudo-randomness - more details[here](https://swcregistry.io/docs/SWC-120)
-- Arithmetic overflow - more details[here](https://swcregistry.io/docs/SWC-101)
-- Access controls (both missing and through `tx.origin`) - more details[here](https://swcregistry.io/docs/SWC-115)
-- Force feeding ether - more details[here](https://swcregistry.io/docs/SWC-132)
-- Gas exhaustion - more details[here](https://swcregistry.io/docs/SWC-128)
+- Unencrypted secret data on-chain - more details [here](https://swcregistry.io/docs/SWC-136)
+- Weak pseudo-randomness - more details [here](https://swcregistry.io/docs/SWC-120)
+- Arithmetic overflow - more details [here](https://swcregistry.io/docs/SWC-101)
+- Access controls (both missing and through `tx.origin`) - more details [here](https://swcregistry.io/docs/SWC-115)
+- Force feeding ether - more details [here](https://swcregistry.io/docs/SWC-132)
+- Gas exhaustion - more details [here](https://swcregistry.io/docs/SWC-128)
 
 
 :star: `102`
 
-- Push vs Pull approach (PoC can be found in test/) - more details[here](https://swcregistry.io/docs/SWC-113)
+- Push vs Pull approach (PoC can be found in test/) - more details [here](https://swcregistry.io/docs/SWC-113)
 - Cross-function reentrancy (PoC can be found in test/)
 - Commit and reveal scheme implementations (PoC can be found in test/)
 	- Pre-computable 
