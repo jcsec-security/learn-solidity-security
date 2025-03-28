@@ -1,7 +1,7 @@
 pragma solidity ^0.8.13;
 
 import "forge-std/Test.sol";
-import "../src/102/3-CommitReveal_1.sol";
+import "../../src/102/3-CommitReveal_1.sol";
 
 contract CRVotingTest is Test  {
     VotingContract public targetVoting;
