@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity ^0.8.13;
 
-import "@openzeppelin/contracts/access/Ownable.sol";
-import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+import {Ownble} from "@openzeppelin/contracts/access/Ownable.sol";
+import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import {SafeERC20} from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 
 
 ///@notice The contract allows anyone to sell and buy goods. The seller has to lock funds to avoid malicious behaviour.
 /// In addition, unhappy buyers can open a claim and the DAO will decide if the seller misbehaved or not.
 ///@dev Security review is pending... should we deploy this?
-///@custom:ctf This contract is part of JC's mock-audit exercise at https://github.com/jcr-security/solidity-security-teaching-resources
+///@custom:PracticeAt https://github.com/jcsec-security/learn-solidity-security
 contract VulnerableShop is Ownable {
 
     using SafeERC20 for IERC20;

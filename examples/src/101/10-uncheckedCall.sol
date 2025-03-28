@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity ^0.8.13;
 
-import "openzeppelin-contracts/contracts/token/ERC721/ERC721.sol";
-import "openzeppelin-contracts/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
-import "openzeppelin-contracts/contracts/token/ERC20/IERC20.sol";
+import {ERC721} from "openzeppelin-contracts/contracts/token/ERC721/ERC721.sol";
+import {ERC721Enumerable} from "openzeppelin-contracts/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
+import {IERC20} from "openzeppelin-contracts/contracts/token/ERC20/IERC20.sol";
 
 /**
     @dev This contract includes an example of unchecked return statement on ERC20.
         You can read about unchecked return values at https://swcregistry.io/docs/SWC-104/
     @custom:deployed-at ETHERSCAN URL
-	@custom:exercise This contract is part of JC's basic examples at https://github.com/jcr-security/solidity-security-teaching-resources
-*/
+	@custom:PracticeAt https://github.com/jcsec-security/learn-solidity-security
+    */
 contract Example10 is ERC721, ERC721Enumerable {
 
     IERC20 public immutable cat_tkn;

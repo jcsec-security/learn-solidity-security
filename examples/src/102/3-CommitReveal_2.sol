@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity 0.8.20;
 
-import "@openzeppelin/contracts/access/Ownable.sol";
+import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
 
 uint256 constant MIN_WINDOW = 2*60; // 2 minutes
 uint256 constant MAX_WINDOW = 3*24*60*60; // 3 days
@@ -12,7 +12,7 @@ uint256 constant MAX_WINDOW = 3*24*60*60; // 3 days
         However, the authorship of the answer is not verified, so it is possible to frontrun+replay the commit.
         This way, the attacker could win the riddle even if he doesn't know the answer.
     @custom:deployed-at INSERT ETHERSCAN URL
-    @custom:exercise This contract is part of the examples at https://github.com/jcr-security/solidity-security-teaching-resources
+    @custom:PracticeAt https://github.com/jcsec-security/learn-solidity-security
  */
 contract RiddlerContract is Ownable {
 

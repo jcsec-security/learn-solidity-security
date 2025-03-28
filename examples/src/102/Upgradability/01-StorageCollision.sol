@@ -1,5 +1,10 @@
+// SPDX-License-Identifier: GPL-3.0
 pragma solidity 0.8.28;
 
+
+///@dev This contract includes an example of an storage collision between proxy and imp.
+///@dev deployed-at ETHERSCAN URL
+///@custom:PracticeAt https://github.com/jcsec-security/learn-solidity-security
 contract Proxy {
     address public implementation;
     address public owner;

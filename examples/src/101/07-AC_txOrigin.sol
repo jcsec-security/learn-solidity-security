@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: GPL-3.0
 pragma solidity ^0.8.13;
 
 
@@ -7,8 +7,8 @@ pragma solidity ^0.8.13;
 		a windows for phishing attack against the owner to bypass the AC.
 		You can read about access controls through tx.origin at https://swcregistry.io/docs/SWC-115 
 	@custom:deployed-at ETHERSCAN URL
-	@custom:exercise This contract is part of JC's basic examples at https://github.com/jcr-security/solidity-security-teaching-resources
-*/
+	@custom:PracticeAt https://github.com/jcsec-security/learn-solidity-security
+	*/
 contract Example7 {
 
     mapping (address depositor => uint256 balance) balance;

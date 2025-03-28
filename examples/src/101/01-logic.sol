@@ -1,8 +1,8 @@
-// SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: GPL-3.0
 pragma solidity ^0.8.13;
 
 
-import "@openzeppelin/contracts/access/Ownable.sol";
+import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
 
 
 uint256 constant N_VAULT = 10;
@@ -10,7 +10,7 @@ uint256 constant N_VAULT = 10;
 
 /**
 	@dev This contract includes an examples of a logic bug. Line 33 updates the accumulator only when entering the if statement, instead of updating it at the end of the loop.
-	@custom:exercise This contract is part of JC's basic examples at https://github.com/jcr-security/solidity-security-teaching-resources
+	@custom:PracticeAt https://github.com/jcsec-security/learn-solidity-security
 */
 contract Example1 is Ownable {
 

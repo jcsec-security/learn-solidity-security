@@ -1,14 +1,14 @@
-// SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: GPL-3.0
 pragma solidity ^0.8.13;
 
 
-import "@openzeppelin/contracts/access/Ownable.sol";
-import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
+import {ERC721} from "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
 
 ///@dev This contract includes an examples of a logic bug. Lines 27-30 increment the ID and mint a new token but never
 /// reduces the adress' allowance.
-///@custom:exercise This contract is part of JC's basic examples at https://github.com/jcr-security/solidity-security-teaching-resources
+///@custom:PracticeAt https://github.com/jcsec-security/learn-solidity-security
 ///@custom:crediting This idea was taken from an online challenge published by RareSkill
 contract Example12 is ERC721, Ownable {
 

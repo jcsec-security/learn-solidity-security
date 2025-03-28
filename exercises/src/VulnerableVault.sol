@@ -6,7 +6,7 @@ pragma solidity ^0.7.6;
 ///in the shop, the funds are unlocked by the Shop contract. If the user is considered malicious
 ///by the DAO, the funds are slashed. 
 ///@dev Security review is pending... should we deploy this?
-///@dev custom:ctf This contract is part of the exercises at https://github.com/jcr-security/solidity-security-teaching-resources
+///@custom:PracticeAt https://github.com/jcsec-security/learn-solidity-security
 contract VulnerableVault { 
 
     // The unlocked balance of the users in the vault

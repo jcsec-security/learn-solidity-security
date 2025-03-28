@@ -1,8 +1,8 @@
-// SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: GPL-3.0
 pragma solidity 0.8.20;
 
-import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
-import "forge-std/Test.sol";
+import {nonReentrant} from "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
+import {console, console2} from  "forge-std/Test.sol";
 
 
 /**
@@ -10,7 +10,7 @@ import "forge-std/Test.sol";
         and a transferTo function that is not protected. This contract is vulnerable to Cross Fn reentrancy
         between the two functions.
     @custom:deployed-at INSERT ETHERSCAN URL
-    @custom:exercise This contract is part of the examples at https://github.com/jcr-security/solidity-security-teaching-resources
+    @custom:PracticeAt https://github.com/jcsec-security/learn-solidity-security
  */
 contract xFnReentrancy is ReentrancyGuard {
     mapping (address depositor => uint256 balance) balance;

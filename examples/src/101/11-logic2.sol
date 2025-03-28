@@ -1,14 +1,13 @@
-// SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: GPL-3.0
 pragma solidity ^0.8.13;
 
 
 /**
-	@dev This contract includes an examples of a logic bug. Line 21 is incorrect, third term should be 16.
-	@custom:exercise This contract is part of JC's basic examples at https://github.com/jcr-security/solidity-security-teaching-resources
-*/
+	@dev This contract includes an examples of a logic bug. Line 21 is an incorrect math impl, third term should be 20.
+	@custom:PracticeAt https://github.com/jcsec-security/learn-solidity-security
+	*/
 contract Example11 {
 
-	// Incorrect math Implementación matemática incorrecta. Ej (a+b)^2 = A2 + 2ab + b2.
 	constructor() {}
 
 	// (2a + 3b)^2 

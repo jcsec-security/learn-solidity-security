@@ -10,14 +10,18 @@ Here you have multiple small examples of basic security issue of solidity smart 
 
 :star: `101`
 
-- Logic bug
+- Logic bugs, different examples
 - Basic reentrancy - more details [here](https://www.cyfrin.io/glossary/reentrancy-attack)
 - Unencrypted secret data on-chain - more details [here](https://swcregistry.io/docs/SWC-136)
 - Weak pseudo-randomness - more details [here](https://swcregistry.io/docs/SWC-120)
-- Arithmetic overflow - more details [here](https://swcregistry.io/docs/SWC-101)
-- Access controls (both missing and through `tx.origin`) - more details [here](https://swcregistry.io/docs/SWC-115)
+- Arithmetic under/overflow - more details [here](https://swcregistry.io/docs/SWC-101)
+	- Uncatched due to old sol version, new version causing a DoS, casting errors...
+- Access controls - more details [here](https://swcregistry.io/docs/SWC-115)
+	- Both missing controls and based on `tx.origin`
 - Force feeding ether - more details [here](https://swcregistry.io/docs/SWC-132)
 - Gas exhaustion - more details [here](https://swcregistry.io/docs/SWC-128)
+- Frontrunning
+- Unchecked call return value
 
 
 :star: `102`
@@ -27,11 +31,12 @@ Here you have multiple small examples of basic security issue of solidity smart 
 - Commit and reveal scheme implementations (PoC can be found in test/)
 	- Pre-computable 
 	- Replayable (+ frontrun)
-
+- Upgradability related
+	- Storage collision between Proxy and Implementation
 
 ## Next steps
 
-The current version is `v0.3`. At the moment I would like to achieve the below in order to upgrade it:
+The current version is `v0.4`. At the moment I would like to achieve the below in order to upgrade it:
 
 :pushpin:`V1.0`
 
