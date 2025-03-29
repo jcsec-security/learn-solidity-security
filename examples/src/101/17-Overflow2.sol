@@ -12,21 +12,19 @@ pragma solidity 0.8.28;
 */
 contract Example5 {
 
-	// Depositor => balance
-    mapping (address => uint256) balance;
-	// Depositor => blockstamp_latest_deposit
-	mapping (address => uint256) blockstamp;
+    mapping (address depositor => uint256) balance;
+	mapping (address depositor => uint256 n_block) latest_deposit;
 	
 
     function deposit() external payable {
         balance[msg.sender] += msg.value;
-		blockstamp[msg.sender] = block.number;
+		latest_deposit[msg.sender] = block.number;
     }
 	
 
 	function withdraw() external {
 		// Check
-		require(blockstamp[msg.sender] - block.number > 10, // This is incorrectly ordered, causing a revert on underflow
+		require(latest_deposit[msg.sender] - block.number > 10, // This is incorrectly ordered, causing a revert on underflow
 			"A cooldown of 10 blocks is required!"
 		);
 
