@@ -8,7 +8,6 @@ pragma solidity ^0.7.6;
 		unchecked{} and assembly{} blocks DO NOT check the math, therefore making over/underflow exploitable.
 		You can read about integer overflows at https://swcregistry.io/docs/SWC-101
 	@dev deployed-at ETHERSCAN URL
-	@custom:PracticeAt https://github.com/jcsec-security/learn-solidity-security
 */
 contract Example5 {
 

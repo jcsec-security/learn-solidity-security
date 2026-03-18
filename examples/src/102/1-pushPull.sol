@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0
-pragma solidity 0.8.20;
+pragma solidity ^0.8.28;
 
 import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
 
@@ -11,7 +11,7 @@ uint256 constant BATCH = 4;
         functions to retrieve the funds. One of them follow the Push pattern, while the other
         is safe and uses the Pull pattern.
     @custom:deployed-at INSERT ETHERSCAN URL
-   @custom:PracticeAt https://github.com/jcsec-security/learn-solidity-security    
+   @custom:practice-at https://github.com/jcsec-security/learn-solidity-security    
  */
 contract PullOverPush is Ownable {
 

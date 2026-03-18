@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-3.0
-pragma solidity ^0.8.13;
+pragma solidity ^0.8.28;
 
 
 /**
     @dev This contract includes an example of cleartext data considered a secret.
     @custom:deployed-at https://sepolia.etherscan.io/address/0xd312426bf550e4729808ced2b277e44c3ddc9b38
     		You can read about Unencrypted data on-chain at https://swcregistry.io/docs/SWC-136
-	@custom:PracticeAt https://github.com/jcsec-security/learn-solidity-security*/ 
+	@custom:practice-at https://github.com/jcsec-security/learn-solidity-security*/ 
 contract Example3 {
 
     uint256 public number;

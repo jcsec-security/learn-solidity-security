@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-3.0
-pragma solidity ^0.8.13;
+pragma solidity ^0.8.28;
 
 
 /**
     @dev This contract includes an example of DoS by gas exhaustion (OOG) due to an unbounded loop.
         You can read about Gas Exhaustion at https://swcregistry.io/docs/SWC-128
     @custom:deployed-at ETHERSCAN URL
-	@custom:PracticeAt https://github.com/jcsec-security/learn-solidity-security
+	@custom:practice-at https://github.com/jcsec-security/learn-solidity-security
     */
 contract Example9 {
 

@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-3.0
-pragma solidity ^0.8.13;
+pragma solidity ^0.8.28;
 
 
 /**
 	@dev This contract includes an examples of a logic bug. Line 21 is an incorrect math impl, third term should be 20.
-	@custom:PracticeAt https://github.com/jcsec-security/learn-solidity-security
+	@custom:practice-at https://github.com/jcsec-security/learn-solidity-security
 	*/
 contract Example11 {
 

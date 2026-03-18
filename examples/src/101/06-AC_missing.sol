@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-3.0
-pragma solidity ^0.8.13;
+pragma solidity ^0.8.28;
 
 import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
 
 /**
 	@dev This contract includes an example of lack of access controls in line 37.
 	@custom:deployed-at ETHERSCAN URL
-	@custom:PracticeAt https://github.com/jcsec-security/learn-solidity-security
+	@custom:practice-at https://github.com/jcsec-security/learn-solidity-security
 */
 contract Example6 is Ownable {
 

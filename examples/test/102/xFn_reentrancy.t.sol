@@ -1,4 +1,4 @@
-pragma solidity ^0.8.13;
+pragma solidity ^0.8.28;
 
 import "forge-std/Test.sol";
 import "../../src/102/2-xFn_reentrancy.sol";

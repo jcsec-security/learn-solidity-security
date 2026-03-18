@@ -8,7 +8,7 @@ uint256 constant THRESHOLD = 10;
 ///@notice The contract allows to vote on open disputes. If the dispute is resolved in favor of the buyer,
 /// the seller have to refund the buyer. If the dispute is resolved in favor of the seller, the sale is closed.
 ///@dev Security review is pending... should we deploy this?
-///@custom:PracticeAt https://github.com/jcsec-security/learn-solidity-security
+///@custom:practice-at https://github.com/jcsec-security/learn-solidity-security
 contract VulnerableDAO {
 
     /** 

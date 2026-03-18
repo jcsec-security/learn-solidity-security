@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0
-pragma solidity ^0.8.13;
+pragma solidity ^0.8.28;
 
 
 uint256 constant FEE = 100 wei;
@@ -8,7 +8,7 @@ uint256 constant FEE = 100 wei;
     @dev This contract includes an example of a predictable "random" number generation.
     @custom:deployed-at ETHERSCAN URL
         You can read about weak pseudo-randomness at https://swcregistry.io/docs/SWC-120
-	@custom:PracticeAt https://github.com/jcsec-security/learn-solidity-security
+	@custom:practice-at https://github.com/jcsec-security/learn-solidity-security
 */
 contract Example4 {
 

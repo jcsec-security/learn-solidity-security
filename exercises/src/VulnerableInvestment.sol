@@ -9,7 +9,7 @@ uint256 constant PERCENT = 100;
 
 ///@notice The contract allows anyone to perform some investments. Then, it allows to distribute some of the invested
 /// amount to the beneficiaries. The caller will be rewarded with a percentage of the distributed amount as incentive.
-///@custom:PracticeAt https://github.com/jcsec-security/learn-solidity-security
+///@custom:practice-at https://github.com/jcsec-security/learn-solidity-security
 contract VulnerableInvestment {
 
     /************************************** State vars  and Structs *******************************************************/

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0
-pragma solidity 0.8.20;
+pragma solidity ^0.8.28;
 
 import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
 
@@ -13,7 +13,7 @@ uint256 constant MAX_WINDOW = 3*24*60*60; // 3 days
         as the only additional info in the message is the sender address which is public. Rendering the 
         mechanism ineffective
     @custom:deployed-at INSERT ETHERSCAN URL
-    @custom:PracticeAt https://github.com/jcsec-security/learn-solidity-security
+    @custom:practice-at https://github.com/jcsec-security/learn-solidity-security
  */
 contract VotingContract is Ownable {
 

@@ -9,7 +9,7 @@ import {SafeERC20} from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol
 ///@notice The contract allows anyone to sell and buy goods. The seller has to lock funds to avoid malicious behaviour.
 /// In addition, unhappy buyers can open a claim and the DAO will decide if the seller misbehaved or not.
 ///@dev Security review is pending... should we deploy this?
-///@custom:PracticeAt https://github.com/jcsec-security/learn-solidity-security
+///@custom:practice-at https://github.com/jcsec-security/learn-solidity-security
 contract VulnerableShop is Ownable {
 
     using SafeERC20 for IERC20;
